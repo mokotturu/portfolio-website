@@ -9,8 +9,3 @@
 :root {
 	scroll-behavior: smooth;
 }
-
-body {
-	margin: 0;
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-}

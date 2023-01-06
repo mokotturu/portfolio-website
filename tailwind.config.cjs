@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
+    fontFamily: {
+      'sans': ['Inter', 'sans-serif'],
+      'mono': ['JetBrains Mono', 'monospace'],
+    },
     extend: {
       colors: {
         "light-primary": "#fef9ff",

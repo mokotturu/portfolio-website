@@ -15,44 +15,132 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-dark-primary text-light-primary">
-	<nav class="sticky flex justify-center top-0 left-0 py-8 z-10 bg-dark-primary/75 backdrop-blur">
-		<div class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em]">
-			<div class="flex justify-between items-center">
-				<a class="font-semibold">MK</a>
-				<ul class="flex list-none">
-					<li class="mx-4"><a class="hover:underline" href="#">About Me</a></li>
-					<li class="mx-4"><a class="hover:underline" href="#">Resume</a></li>
-					<li class="mx-4"><a class="hover:underline" href="#">Projects</a></li>
-					<li class="mx-4"><a class="hover:underline" href="#">Contact</a></li>
-				</ul>
-			</div>
+<body class="flex flex-col bg-dark-primary text-light-primary m-0 min-h-screen font-sans">
+	<nav
+		class="sticky w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] mx-auto top-0 left-0 py-6 z-10 bg-dark-primary/75 backdrop-blur border-b-2 border-b-dark-secondary">
+		<div class="flex justify-between items-center">
+			<a class="font-bold font-mono">MK</a>
+			<ul class="flex list-none">
+				<li class="mx-4"><a class="font-mono hover:underline" href="#about-me">About me</a></li>
+				<li class="mx-4"><a class="font-mono hover:underline" href="#research">Research</a></li>
+				<li class="mx-4"><a class="font-mono hover:underline" href="#experience">Experience</a></li>
+				<li class="mx-4"><a class="font-mono hover:underline" href="#projects">Projects</a></li>
+				<li class="mx-4"><a class="font-mono hover:underline" href="#">Resume</a></li>
+			</ul>
 		</div>
 	</nav>
 
-	<main class="flex justify-center py-2">
-		<div class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em]">
-			<div class="flex flex-col justify-between items-center gap-8">
-				<section class="flex justify-center items-center">
-					<img class="w-80 rounded-lg" src="/me.png" alt="Profile picture">
-				</section>
+	<main class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] my-8 mx-auto flex flex-col gap-8">
+		<img class="w-80 rounded-lg mx-auto" src="/me.png" alt="Profile picture">
 
-				<section class="p-4 bg-dark-secondary rounded-lg">
-					Hello, I am Monish. I am an undergraduate student at the University of Massachusetts Lowell majoring
-					in
-					computer science and minoring in mathematics. I am also a research assistant in the
-					<a class="text-accent-1 hover:underline" href="https://www.pearl-robotics.com/" target="_blank"
-						rel="noreferrer noopener">PeARL Lab</a>
-					and
-					<a class="text-accent-1 hover:underline" href="https://arlstrong-uml.netlify.app/" target="_blank"
-						rel="noreferrer noopener">ARL
-						STRONG</a>.
-					My
-					interests include data science, reinforcement learning, robotics, and web development.
-				</section>
+		<section id="about-me" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
+			<h2 class="font-bold text-4xl font-mono">~ About me</h2>
+			<p>
+				Hello, I am Monish. I am an undergraduate student at the University of Massachusetts Lowell
+				majoring in computer science and minoring in mathematics. I am also a research assistant in the
+				<a class="text-accent-1 hover:underline" href="https://www.pearl-robotics.com/" target="_blank"
+					rel="noreferrer noopener">
+					PeARL Lab
+				</a>
+				and
+				<a class="text-accent-1 hover:underline" href="https://arlstrong-uml.netlify.app/" target="_blank"
+					rel="noreferrer noopener">
+					ARL STRONG
+				</a>
+				. My interests include data science, reinforcement learning, robotics, and web
+				development.
+			</p>
+		</section>
+
+		<section id="research" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
+			<h2 class="font-bold text-4xl font-mono">~ Research</h2>
+			<p>
+				My research in the ARL STRONG group focused on developing a web interface to conduct virtual human-robot
+				trust experiments. I created a web application that simulates a 2D human-robot interaction game that
+				examines the development of trust in human-robot networks by collecting various responses during the
+				participants' playtime. So far, I deployed over 30 variations of this game which allowed hundreds of
+				participants to contribute to the study's dataset. Several papers have been published based on the
+				results and some are currently in the review process.
+			</p>
+			<p>
+				My research in the PeARL lab focused on working <a class="hover:underline text-accent-1"
+					href="https://www.uml.edu/sciences/computer-science/faculty/ahmadzadeh-reza.aspx" target="_blank"
+					rel="noreferrer noopener">Professor Reza Ahmadzadeh</a> to work on the multi-agent
+				multi-armed bandit problem in reinforcement learning. The main goal was to expedite the emergence of
+				consensus among the agents in a network. I worked on the implementation of multi-agent multi-armed
+				bandit algorithms and simulations to test the performance of various optimization methods. I also used a
+				just-in-time compiler along with parallelization to speed
+				up the simulation times by over 95% in Python, which allowed for faster and easier testing.
+			</p>
+		</section>
+
+		<section id="experience" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
+			<h2 class="font-bold text-4xl font-mono">~ Experience</h2>
+			<p>
+				I worked at <a class="hover:underline text-accent-1" href="https://www.kaizntree.com" target="_blank"
+					rel="noreferrer noopener">Kaizntree</a> as a remote web development intern in the summer of 2021. My
+				work involved programming GUI components using VueJS that interact with a REST API in Django to retrieve
+				and display information and provide inputs to the user to modify data in a web application. I also
+				debugged existing components and designed a user experience to minimize the user effort and time.
+			</p>
+		</section>
+
+		<section id="projects" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
+			<h2 class="font-bold text-4xl font-mono">~ Projects</h2>
+			<p>
+				I created the website for the <a class="hover:underline text-accent-1"
+					href="https://umasslowell2022.nerc.io" target="_blank" rel="noreferrer noopener">Northeast Robotics
+					Colloquium
+					(NERC) 2022</a>, which was hosted by the
+				University of Massachusetts on October 8, 2022. This event is a research meeting, job-fair, and a show
+				case for established and up-coming robot companies that brought together roboticists in the northeastern
+				United States and Canada.
+			</p>
+			<p>
+				I created the website for <a class="hover:underline text-accent-1"
+					href="https://arlstrong-uml.netlify.app" target="_blank"
+					rel="noreferrer noopener">Trust-NEARCHAT</a>,
+				the group of researchers that I am a part of at the University of Massachusetts Lowell in the ARL STRONG
+				team. This website is a display of the focus of the project and the work done and published by our
+				group.
+			</p>
+			<p>
+				My other works, some completed for classes and some for fun, include search algorithms such as RRT and
+				A*, the famous evil hangman game, reinforcement learning algorithms including tabular methods and
+				approximation methods, and more. Check out my <a class="hover:underline text-accent-1"
+					href="https://github.com/mokotturu" target="_blank" rel="noreferrer noopener">GitHub profile</a> for
+				more details and repositories.
+			</p>
+		</section>
+	</main>
+
+	<footer class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] mx-auto py-16 border-t-2 border-dark-secondary">
+		<div class="flex justify-between items-center">
+			<a class="font-mono hover:underline text-accent-1"
+				href="mailto:monishkotturu@gmail.com">monishkotturu@gmail.com</a>
+			<div class="flex gap-4 justify-center items-center">
+				<a href="https://github.com/mokotturu" target="_blank" rel="noreferrer noopener">
+					<svg class="stroke-light-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" class="feather feather-github">
+						<path
+							d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+						</path>
+					</svg>
+				</a>
+				<a href="https://linkedin.com/in/monish-reddy-kotturu" target="_blank" rel="noreferrer noopener">
+					<svg class="stroke-light-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" class="feather feather-linkedin">
+						<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+						</path>
+						<rect x="2" y="9" width="4" height="12"></rect>
+						<circle cx="4" cy="4" r="2"></circle>
+					</svg>
+				</a>
 			</div>
 		</div>
-	</main>
+	</footer>
 </body>
 
 </html>
