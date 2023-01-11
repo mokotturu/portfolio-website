@@ -15,17 +15,45 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body class="flex flex-col bg-dark-primary text-light-primary m-0 min-h-screen font-sans">
+<body class="bg-dark-primary text-light-primary m-0 min-h-screen font-sans">
 	<nav
-		class="sticky w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] mx-auto top-0 left-0 py-6 z-10 bg-dark-primary/75 backdrop-blur border-b-2 border-b-dark-secondary">
-		<div class="flex justify-between items-center">
-			<a class="font-bold font-mono">MK</a>
-			<ul class="flex list-none">
-				<li class="mx-4"><a class="font-mono hover:underline" href="#about-me">About me</a></li>
-				<li class="mx-4"><a class="font-mono hover:underline" href="#research">Research</a></li>
-				<li class="mx-4"><a class="font-mono hover:underline" href="#experience">Experience</a></li>
-				<li class="mx-4"><a class="font-mono hover:underline" href="#projects">Projects</a></li>
-				<li class="mx-4"><a class="font-mono hover:underline" href="#">Resume</a></li>
+		class="sticky text-center w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] mx-auto top-0 left-0 py-6 z-10 bg-dark-primary/75 backdrop-blur border-b-2 border-dark-secondary">
+		<div class="flex flex-col lg:flex-row justify-between items-center">
+			<div class="flex justify-between items-center w-full lg:w-auto">
+				<a class="font-bold font-mono hover:text-accent-1 transition-all" href="/">MK</a>
+				<button class="inline-block lg:hidden mobile-nav-menu-btn">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-menu">
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
+					</svg>
+				</button>
+			</div>
+
+			<ul
+				class="nav-items-list overflow-hidden lg:overflow-auto w-full lg:w-auto h-0 lg:h-full lg:child:inline-block transition-[height] ease-in-out">
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono hover:text-accent-1 transition-all"
+						href="#about-me">About me</a>
+				</li>
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono hover:text-accent-1 transition-all"
+						href="#research">Research</a>
+				</li>
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono hover:text-accent-1 transition-all"
+						href="#experience">Experience</a>
+				</li>
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono hover:text-accent-1 transition-all"
+						href="#projects">Projects</a>
+				</li>
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
+						href="#">Resume</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
@@ -34,7 +62,7 @@
 		<img class="w-80 rounded-lg mx-auto" src="/me.png" alt="Profile picture">
 
 		<section id="about-me" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
-			<h2 class="font-bold text-4xl font-mono">~ About me</h2>
+			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">About me</h2>
 			<p>
 				Hello, I am Monish. I am an undergraduate student at the University of Massachusetts Lowell
 				majoring in computer science and minoring in mathematics. I am also a research assistant in the
@@ -53,7 +81,7 @@
 		</section>
 
 		<section id="research" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
-			<h2 class="font-bold text-4xl font-mono">~ Research</h2>
+			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">Research</h2>
 			<p>
 				My research in the ARL STRONG group focused on developing a web interface to conduct virtual human-robot
 				trust experiments. I created a web application that simulates a 2D human-robot interaction game that
@@ -75,7 +103,7 @@
 		</section>
 
 		<section id="experience" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
-			<h2 class="font-bold text-4xl font-mono">~ Experience</h2>
+			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">Experience</h2>
 			<p>
 				I worked at <a class="hover:underline text-accent-1" href="https://www.kaizntree.com" target="_blank"
 					rel="noreferrer noopener">Kaizntree</a> as a remote web development intern in the summer of 2021. My
@@ -86,7 +114,7 @@
 		</section>
 
 		<section id="projects" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
-			<h2 class="font-bold text-4xl font-mono">~ Projects</h2>
+			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">Projects</h2>
 			<p>
 				I created the website for the <a class="hover:underline text-accent-1"
 					href="https://umasslowell2022.nerc.io" target="_blank" rel="noreferrer noopener">Northeast Robotics
@@ -120,18 +148,18 @@
 				href="mailto:monishkotturu@gmail.com">monishkotturu@gmail.com</a>
 			<div class="flex gap-4 justify-center items-center">
 				<a href="https://github.com/mokotturu" target="_blank" rel="noreferrer noopener">
-					<svg class="stroke-light-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+					<svg class="stroke-accent-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						stroke-linejoin="round" class="feather feather-github">
+						stroke-linejoin="round" class="feather feather-github" role="img" aria-label="GitHub">
 						<path
 							d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
 						</path>
 					</svg>
 				</a>
 				<a href="https://linkedin.com/in/monish-reddy-kotturu" target="_blank" rel="noreferrer noopener">
-					<svg class="stroke-light-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+					<svg class="stroke-accent-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						stroke-linejoin="round" class="feather feather-linkedin">
+						stroke-linejoin="round" class="feather feather-linkedin" role="img" aria-label="LinkedIn">
 						<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
 						</path>
 						<rect x="2" y="9" width="4" height="12"></rect>
@@ -141,6 +169,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="module" src="./index.js"></script>
 </body>
 
 </html>
