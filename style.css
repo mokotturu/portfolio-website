@@ -4,9 +4,9 @@
 
 *, *:before, *:after {
 	box-sizing: border-box;
-	scroll-padding-top: 6rem;
 }
 
 :root {
 	scroll-behavior: smooth;
+	scroll-padding-top: 7rem;
 }

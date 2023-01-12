@@ -17,10 +17,11 @@
 
 <body class="bg-dark-primary text-light-primary m-0 min-h-screen font-sans">
 	<nav
-		class="sticky text-center w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] mx-auto top-0 left-0 py-6 z-10 bg-dark-primary/75 backdrop-blur border-b-2 border-dark-secondary">
-		<div class="flex flex-col lg:flex-row justify-between items-center">
+		class="fixed left-1/2 -translate-x-1/2 transform-gpu text-center w-[85%] lg:w-[60rem] xl:w-[75rem] 2xl:w-[85rem] h-20 top-0 z-10 bg-dark-primary/75 backdrop-blur border-b-2 border-dark-secondary transition-[height] ease-in-out">
+		<div
+			class="flex flex-col lg:flex-row justify-between items-center relative top-1/2 -translate-y-1/2 transform-gpu">
 			<div class="flex justify-between items-center w-full lg:w-auto">
-				<a class="font-bold font-mono hover:text-accent-1 transition-all" href="/">MK</a>
+				<a class="font-bold font-mono hover:text-accent-1 transition-all py-2" href="/">MK</a>
 				<button class="inline-block lg:hidden mobile-nav-menu-btn">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -32,33 +33,58 @@
 				</button>
 			</div>
 
-			<ul
-				class="nav-items-list overflow-hidden lg:overflow-auto w-full lg:w-auto h-0 lg:h-full lg:child:inline-block transition-[height] ease-in-out">
+			<!-- desktop list -->
+			<ul class="nav-items-list-desktop child:inline-block hidden lg:block">
 				<li>
-					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono hover:text-accent-1 transition-all"
+					<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
 						href="#about-me">About me</a>
 				</li>
 				<li>
-					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono hover:text-accent-1 transition-all"
+					<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
 						href="#research">Research</a>
 				</li>
 				<li>
-					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono hover:text-accent-1 transition-all"
+					<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
 						href="#experience">Experience</a>
 				</li>
 				<li>
-					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono hover:text-accent-1 transition-all"
+					<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
 						href="#projects">Projects</a>
 				</li>
 				<li>
-					<a class="inline-block py-2 mx-1 my-2 lg:my-0 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
+					<a class="inline-block py-2 ml-1 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
 						href="#">Resume</a>
+				</li>
+			</ul>
+
+			<!-- mobile list -->
+			<ul class="nav-items-list-mobile overflow-hidden w-full h-0 transition-[height] ease-in-out block lg:hidden"
+				data-collapsed="true">
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+						data-ref="#about-me" href="#about-me">About me</a>
+				</li>
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+						data-ref="#research" href="#research">Research</a>
+				</li>
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+						data-ref="#experience" href="#experience">Experience</a>
+				</li>
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+						data-ref="#projects" href="#projects">Projects</a>
+				</li>
+				<li>
+					<a class="inline-block py-2 mx-1 my-2 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
+						data-ref="" href="#">Resume</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
-	<main class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] my-8 mx-auto flex flex-col gap-8">
+	<main class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] mt-20 py-8 mx-auto flex flex-col gap-8">
 		<img class="w-80 rounded-lg mx-auto" src="/me.png" alt="Profile picture">
 
 		<section id="about-me" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
@@ -67,15 +93,12 @@
 				Hello, I am Monish. I am an undergraduate student at the University of Massachusetts Lowell
 				majoring in computer science and minoring in mathematics. I am also a research assistant in the
 				<a class="text-accent-1 hover:underline" href="https://www.pearl-robotics.com/" target="_blank"
-					rel="noreferrer noopener">
-					PeARL Lab
-				</a>
+					rel="noreferrer noopener">PeARL Lab</a>
 				and
 				<a class="text-accent-1 hover:underline" href="https://arlstrong-uml.netlify.app/" target="_blank"
-					rel="noreferrer noopener">
-					ARL STRONG
-				</a>
-				. My interests include data science, reinforcement learning, robotics, and web
+					rel="noreferrer noopener">ARL STRONG</a>.
+				My interests include data science, reinforcement learning,
+				robotics, and web
 				development.
 			</p>
 		</section>
