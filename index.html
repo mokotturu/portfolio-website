@@ -2,10 +2,20 @@
 <html lang="en">
 
 <head>
+	<!-- meta -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Monish Reddy Kotturu</title>
+	<meta name="description"
+		content="Monish Reddy Kotturu: Computer science undergraduate and research assistant at the University of Massachusetts Lowell.">
+	<meta property="og:url" content="https://monishkotturu.com">
+	<meta property="og:title" content="Monish Reddy Kotturu">
+	<meta property="og:description"
+		content="Monish Reddy Kotturu: Computer science undergraduate and research assistant at the University of Massachusetts Lowell.">
+	<meta property="og:image" content="https://monishkotturu.com/og.png">
+
+	<!-- resources -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap"
@@ -13,81 +23,89 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body class="bg-dark-primary text-light-primary m-0 min-h-screen font-sans">
-	<p class="w-full fixed top-0 z-20 bg-accent-1 text-light-primary font-semibold text-center h-8 leading-8">This page
-		is under construction.</p>
-	<nav
-		class="fixed left-1/2 -translate-x-1/2 transform-gpu text-center w-[85%] lg:w-[60rem] xl:w-[75rem] 2xl:w-[85rem] top-8 h-20 z-10 bg-dark-primary/75 backdrop-blur border-b-2 border-dark-secondary transition-[height] ease-in-out">
-		<div
-			class="flex flex-col lg:flex-row justify-between items-center relative top-1/2 -translate-y-1/2 transform-gpu">
-			<div class="flex justify-between items-center w-full lg:w-auto">
-				<a class="font-bold font-mono hover:text-accent-1 transition-all py-2" href="/">MK</a>
-				<button class="inline-block lg:hidden mobile-nav-menu-btn">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						class="feather feather-menu">
-						<line x1="3" y1="12" x2="21" y2="12"></line>
-						<line x1="3" y1="6" x2="21" y2="6"></line>
-						<line x1="3" y1="18" x2="21" y2="18"></line>
-					</svg>
-				</button>
+	<header class="fixed w-full bg-dark-primary/75 backdrop-blur-lg top-0">
+		<nav
+			class="my-0 mx-auto transform-gpu text-center w-[85%] lg:w-[60rem] xl:w-[75rem] 2xl:w-[85rem] h-20 z-10 border-b-2 border-dark-secondary transition-[height] ease-in-out">
+			<div
+				class="flex flex-col lg:flex-row justify-between items-center relative top-1/2 -translate-y-1/2 transform-gpu">
+				<div class="flex justify-between items-center w-full lg:w-auto">
+					<a class="font-bold font-sans hover:text-accent-1 transition-all py-2" href="/">MK</a>
+					<button aria-label="Navigation Menu" class="inline-block lg:hidden mobile-nav-menu-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="feather feather-menu">
+							<line x1="3" y1="12" x2="21" y2="12"></line>
+							<line x1="3" y1="6" x2="21" y2="6"></line>
+							<line x1="3" y1="18" x2="21" y2="18"></line>
+						</svg>
+					</button>
+				</div>
+
+				<!-- desktop list -->
+				<ul class="nav-items-list-desktop child:inline-block hidden lg:block">
+					<li>
+						<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
+							href="#research">Research</a>
+					<li>
+						<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
+							href="#publications">Publications</a>
+					</li>
+					<li>
+						<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
+							href="#work">Work</a>
+					</li>
+					<li>
+						<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
+							href="#projects">Projects</a>
+					</li>
+					<li>
+						<a class="inline-block py-2 ml-1 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
+							href="/resume.pdf" target="_blank" rel="noreferrer noopener">Resume</a>
+					</li>
+				</ul>
+
+				<!-- mobile list -->
+				<ul class="nav-items-list-mobile overflow-hidden w-full h-0 transition-[height] ease-in-out block lg:hidden"
+					data-collapsed="true">
+					<li>
+						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+							href="#research">Research</a>
+					<li>
+						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+							href="#publications">Publications</a>
+					</li>
+					<li>
+						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+							href="#work">Work</a>
+					</li>
+					<li>
+						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+							href="#projects">Projects</a>
+					</li>
+					<li>
+						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
+							href="/resume.pdf" target="_blank" rel="noreferrer noopener">Resume</a>
+					</li>
+				</ul>
 			</div>
+		</nav>
+	</header>
 
-			<!-- desktop list -->
-			<ul class="nav-items-list-desktop child:inline-block hidden lg:block">
-				<li>
-					<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
-						href="#research">Research</a>
-				</li>
-				<li>
-					<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
-						href="#experience">Experience</a>
-				</li>
-				<li>
-					<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
-						href="#projects">Projects</a>
-				</li>
-				<li>
-					<a class="inline-block py-2 ml-1 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
-						href="/resume.pdf" target="_blank" rel="noreferrer noopener">Resume</a>
-				</li>
-			</ul>
-
-			<!-- mobile list -->
-			<ul class="nav-items-list-mobile overflow-hidden w-full h-0 transition-[height] ease-in-out block lg:hidden"
-				data-collapsed="true">
-				<li>
-					<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
-						href="#research">Research</a>
-				</li>
-				<li>
-					<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
-						href="#experience">Experience</a>
-				</li>
-				<li>
-					<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
-						href="#projects">Projects</a>
-				</li>
-				<li>
-					<a class="inline-block py-2 mx-1 my-2 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
-						href="/resume.pdf" target="_blank" rel="noreferrer noopener">Resume</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-	<main class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] py-8 mx-auto flex flex-col gap-8">
+	<main class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] py-8 mx-auto flex flex-col gap-48">
 		<section class="flex flex-col justify-center h-screen">
 			<p class="font-mono text-accent-1 mb-10">Hi, I am</p>
 			<p class="font-bold text-7xl mb-4">Monish Reddy Kotturu</p>
 			<p>A computer science student passionate about data science, robotics, and web development</p>
 		</section>
 
-		<section id="about-me" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
+		<section id="about-me" class="flex flex-col justify-between gap-8 rounded-lg">
 			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">About me</h2>
-			<img class="mx-auto w-1/3 lg:w-1/4 bg-cover bg-center rounded-lg" src="/me.png" alt="Profile picture">
+			<img class="mx-auto w-4/5 md:w-1/3 lg:w-1/4 bg-cover bg-center rounded-lg" src="/me.png"
+				alt="Profile picture">
 			<p>Hello, I am Monish. I am an undergraduate student at the University of Massachusetts Lowell majoring
 				in computer science and minoring in mathematics. I am also a research assistant in the <a
 					class="text-accent-1 hover:underline" href="https://www.pearl-robotics.com/" target="_blank"
@@ -97,17 +115,19 @@
 				development.</p>
 		</section>
 
-		<section id="research" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
-			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">Research</h2>
+		<section id="research" class="flex flex-col justify-between gap-8 rounded-lg">
+			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">Research experience</h2>
 
-			<p>My research in the ARL STRONG group focused on developing a web interface to conduct virtual human-robot
+			<p>
+				My research in the ARL STRONG group focused on developing a web interface to conduct virtual human-robot
 				trust experiments. I created a web application that simulates a 2D human-robot interaction game that
 				examines the development of trust in human-robot networks by collecting various responses during the
 				participants' playtime. So far, I deployed over 30 variations of this game which allowed hundreds of
 				participants to contribute to the study's dataset. Several papers have been published based on the
-				results and some are currently in the review process.</p>
+				results and some are currently in the review process.
+			</p>
 			<ul
-				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-light-secondary before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-light-secondary child:after:text-light-secondary flex-wrap font-mono text-xs">
+				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>jQuery</li>
@@ -125,7 +145,7 @@
 				along with parallelization to speed up the simulation times over 1000x in Python, which allowed for
 				faster and easier testing.</p>
 			<ul
-				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-light-secondary before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-light-secondary child:after:text-light-secondary flex-wrap font-mono text-xs">
+				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
 				<li>Python</li>
 				<li>NumPy</li>
 				<li>Matplotlib</li>
@@ -133,8 +153,27 @@
 			</ul>
 		</section>
 
-		<section id="experience" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
-			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">Experience</h2>
+		<section id="publications" class="flex flex-col justify-between gap-8 rounded-lg">
+			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">Publications</h2>
+
+			<div>
+				<a class="inline-block mb-2 text-xl text-accent-1 font-semibold hover:underline"
+					href="https://doi.org/10.1007/978-3-031-24670-8_56" target="_blank" rel="noreferrer noopener">The
+					Reason for an Apology Matters for Robot Trust Repair</a>
+				<p>Russell Perkins, Zahra Rezaei Khavas, Kalvin McCallum, Monish Reddy Kotturu, Paul
+					Robinette</p>
+			</div>
+			<ul
+				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
+				<li>Human-Robot Interaction</li>
+				<li>Human-Robot Collaboration</li>
+				<li>Trust Calibration</li>
+				<li>Trust Repair</li>
+			</ul>
+		</section>
+
+		<section id="work" class="flex flex-col justify-between gap-8 rounded-lg">
+			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">Work experience</h2>
 
 			<p>I worked at <a class="hover:underline text-accent-1" href="https://www.kaizntree.com" target="_blank"
 					rel="noreferrer noopener">Kaizntree</a> as a remote web development intern in summer 2021. My work
@@ -142,7 +181,7 @@
 				display information and provide inputs to the user to modify data in a web application. I also debugged
 				existing components and designed a user experience to minimize the user effort and time.</p>
 			<ul
-				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-light-secondary before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-light-secondary child:after:text-light-secondary flex-wrap font-mono text-xs">
+				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
 				<li>Vue.js</li>
 				<li>Vuetify</li>
 				<li>Django</li>
@@ -150,7 +189,7 @@
 			</ul>
 		</section>
 
-		<section id="projects" class="flex flex-col justify-between gap-8 p-8 bg-dark-secondary rounded-lg">
+		<section id="projects" class="flex flex-col justify-between gap-8 rounded-lg">
 			<h2 class="font-bold text-4xl font-mono before:content-['~'] before:mr-4">Projects</h2>
 
 			<p>I created the website for the <a class="hover:underline text-accent-1"
@@ -159,7 +198,7 @@
 				This event is a research meeting, job-fair, and a show case for established and up-coming robot
 				companies that brought together roboticists in the northeastern United States and Canada.</p>
 			<ul
-				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-light-secondary before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-light-secondary child:after:text-light-secondary flex-wrap font-mono text-xs">
+				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
 				<li>HTML</li>
 				<li>Tailwindcss</li>
 				<li>JS</li>
@@ -172,7 +211,7 @@
 				University of Massachusetts Lowell in the ARL STRONG team. This website is a display of the focus of the
 				project and the work done and published by our group.</p>
 			<ul
-				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-light-secondary before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-light-secondary child:after:text-light-secondary flex-wrap font-mono text-xs">
+				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
 				<li>React</li>
 				<li>Tailwindcss</li>
 				<li>Netlify</li>
@@ -184,7 +223,7 @@
 					href="https://github.com/mokotturu" target="_blank" rel="noreferrer noopener">GitHub profile</a> for
 				more details and repositories.</p>
 			<ul
-				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-light-secondary before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-light-secondary child:after:text-light-secondary flex-wrap font-mono text-xs">
+				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
 				<li>JS</li>
 				<li>C</li>
 				<li>Python</li>
@@ -218,6 +257,12 @@
 				</a>
 			</div>
 		</div>
+		<p class="text-center mt-8">&copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>
+			Monish Reddy Kotturu
+		</p>
 	</footer>
 
 	<script type="module" src="./index.js"></script>

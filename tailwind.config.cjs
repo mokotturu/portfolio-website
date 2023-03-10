@@ -3,16 +3,15 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     fontFamily: {
-      'sans': ['Inter', 'sans-serif'],
+      'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji'],
       'mono': ['JetBrains Mono', 'monospace'],
     },
     extend: {
       colors: {
         "light-primary": "#eff3fb",
-        "light-secondary": "#9ebde5",
-        "dark-primary": "#04080f",
-        "dark-secondary": "#091120",
-        "accent-1": "#6b91c7"
+        "dark-primary": "#16161e",
+        "dark-secondary": "#1a1b26",
+        "accent-1": "#7aa2f7"
       }
     },
   },
