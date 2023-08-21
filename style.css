@@ -5,8 +5,3 @@
 *, *:before, *:after {
 	box-sizing: border-box;
 }
-
-:root {
-	scroll-behavior: smooth;
-	scroll-padding-top: 7rem;
-}
