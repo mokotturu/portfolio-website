@@ -15,7 +15,7 @@ document.querySelector('.mobile-nav-menu-btn').addEventListener('click', () => {
 	}
 });
 
-document.querySelectorAll('.nav-items-list-mobile li').forEach(elem => elem.addEventListener('click', e => {
+document.querySelectorAll('.nav-items-list-mobile li').forEach(elem => elem.addEventListener('click', () => {
 	navItemsList.style.height = `0px`;
 	document.querySelector('nav').style.height = `${initialNavHeight}px`;
 	navItemsList.classList.add('h-0');
