@@ -1,515 +1,803 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth scroll-py-28">
+	<head>
+		<!-- meta -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Monish Reddy Kotturu</title>
+		<meta
+			name="description"
+			content="Monish Reddy Kotturu: Computer science student and research assistant at the University of Massachusetts Lowell."
+		/>
+		<meta property="og:url" content="https://monishkotturu.com" />
+		<meta property="og:title" content="Monish Reddy Kotturu" />
+		<meta
+			property="og:description"
+			content="Monish Reddy Kotturu: Computer science student and research assistant at the University of Massachusetts Lowell."
+		/>
+		<meta property="og:image" content="https://monishkotturu.com/img/og.png" />
 
-<head>
-	<!-- meta -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Monish Reddy Kotturu</title>
-	<meta name="description"
-		content="Monish Reddy Kotturu: Computer science student and research assistant at the University of Massachusetts Lowell.">
-	<meta property="og:url" content="https://monishkotturu.com">
-	<meta property="og:title" content="Monish Reddy Kotturu">
-	<meta property="og:description"
-		content="Monish Reddy Kotturu: Computer science student and research assistant at the University of Massachusetts Lowell.">
-	<meta property="og:image" content="https://monishkotturu.com/img/og.png">
+		<!-- resources -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+	</head>
 
-	<!-- resources -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-</head>
+	<body class="bg-dark-primary text-light-primary m-0 min-h-screen font-sans">
+		<header class="sticky w-full bg-dark-primary/75 backdrop-blur-lg top-0 z-10">
+			<nav
+				class="my-0 mx-auto transform-gpu text-center w-[85%] lg:w-[60rem] xl:w-[75rem] 2xl:w-[85rem] h-20 border-b-2 border-dark-secondary transition-[height] ease-in-out flex items-center"
+			>
+				<div class="flex flex-col lg:flex-row justify-between items-center w-full">
+					<div class="flex justify-between items-center w-full lg:w-auto">
+						<a
+							class="font-bold font-sans hover:text-accent-1 transition-all py-2"
+							href="/"
+							>MK</a
+						>
+						<button
+							aria-label="Navigation Menu"
+							class="inline-block lg:hidden mobile-nav-menu-btn"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="feather feather-menu"
+							>
+								<line x1="3" y1="12" x2="21" y2="12"></line>
+								<line x1="3" y1="6" x2="21" y2="6"></line>
+								<line x1="3" y1="18" x2="21" y2="18"></line>
+							</svg>
+						</button>
+					</div>
 
-<body class="bg-dark-primary text-light-primary m-0 min-h-screen font-sans">
-	<header class="sticky w-full bg-dark-primary/75 backdrop-blur-lg top-0 z-10">
-		<nav
-			class="my-0 mx-auto transform-gpu text-center w-[85%] lg:w-[60rem] xl:w-[75rem] 2xl:w-[85rem] h-20 border-b-2 border-dark-secondary transition-[height] ease-in-out flex items-center">
-			<div class="flex flex-col lg:flex-row justify-between items-center w-full">
-				<div class="flex justify-between items-center w-full lg:w-auto">
-					<a class="font-bold font-sans hover:text-accent-1 transition-all py-2" href="/">MK</a>
-					<button aria-label="Navigation Menu" class="inline-block lg:hidden mobile-nav-menu-btn">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-							class="feather feather-menu">
-							<line x1="3" y1="12" x2="21" y2="12"></line>
-							<line x1="3" y1="6" x2="21" y2="6"></line>
-							<line x1="3" y1="18" x2="21" y2="18"></line>
-						</svg>
-					</button>
+					<!-- desktop list -->
+					<ul class="nav-items-list-desktop child:inline-block hidden lg:block">
+						<li>
+							<a
+								class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#research"
+								>Research</a
+							>
+						</li>
+
+						<li>
+							<a
+								class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#work"
+								>Work</a
+							>
+						</li>
+						<li>
+							<a
+								class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#publications"
+								>Publications</a
+							>
+						</li>
+						<li>
+							<a
+								class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#posters"
+								>Posters</a
+							>
+						</li>
+						<li>
+							<a
+								class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#projects"
+								>Projects</a
+							>
+						</li>
+						<li>
+							<a
+								class="inline-block py-2 ml-1 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
+								href="/resume.pdf"
+								>Resume</a
+							>
+						</li>
+					</ul>
+
+					<!-- mobile list -->
+					<ul
+						class="nav-items-list-mobile overflow-hidden w-full h-0 transition-[height] ease-in-out block lg:hidden"
+						data-collapsed="true"
+					>
+						<li>
+							<a
+								class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#research"
+								>Research</a
+							>
+						</li>
+
+						<li>
+							<a
+								class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#work"
+								>Work</a
+							>
+						</li>
+						<li>
+							<a
+								class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#publications"
+								>Publications</a
+							>
+						</li>
+						<li>
+							<a
+								class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#posters"
+								>Posters</a
+							>
+						</li>
+						<li>
+							<a
+								class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
+								href="#projects"
+								>Projects</a
+							>
+						</li>
+						<li>
+							<a
+								class="inline-block py-2 mx-1 my-2 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
+								href="/resume.pdf"
+								>Resume</a
+							>
+						</li>
+					</ul>
 				</div>
+			</nav>
+		</header>
 
-				<!-- desktop list -->
-				<ul class="nav-items-list-desktop child:inline-block hidden lg:block">
-					<li>
-						<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#research">Research</a>
-					<li>
-						<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#work">Work</a>
-					</li>
-					<li>
-						<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#publications">Publications</a>
-					</li>
-					<li>
-						<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#posters">Posters</a>
-					</li>
-					<li>
-						<a class="inline-block py-2 mx-1 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#projects">Projects</a>
-					</li>
-					<li>
-						<a class="inline-block py-2 ml-1 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
-							href="/resume.pdf">Resume</a>
-					</li>
-				</ul>
-
-				<!-- mobile list -->
-				<ul class="nav-items-list-mobile overflow-hidden w-full h-0 transition-[height] ease-in-out block lg:hidden"
-					data-collapsed="true">
-					<li>
-						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#research">Research</a>
-					<li>
-						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#work">Work</a>
-					</li>
-					<li>
-						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#publications">Publications</a>
-					</li>
-					<li>
-						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#posters">Posters</a>
-					</li>
-					<li>
-						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono hover:text-accent-1 transition-all"
-							href="#projects">Projects</a>
-					</li>
-					<li>
-						<a class="inline-block py-2 mx-1 my-2 px-3 font-mono border-2 rounded-lg border-accent-1 text-accent-1 hover:bg-accent-1/25 transition-all"
-							href="/resume.pdf">Resume</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-
-	<main class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] py-16 mx-auto flex flex-col gap-36">
-		<section id="intro-header" class="flex flex-col justify-center h-[72vh]">
-			<p class="font-mono text-accent-1 mb-10">Hi, I am</p>
-			<p class="font-bold text-7xl mb-4">Monish Reddy Kotturu</p>
-			<p>A computer science student passionate about data science, robotics, and web development</p>
-		</section>
-
-		<section id="about-me" class="flex flex-col justify-between gap-8 rounded-lg">
-			<h2 class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4">About me</h2>
-			<p>I am an M.S. student in computer science at the University of Massachusetts
-				Lowell. I am also a research assistant in the
-				<a class="text-accent-1 hover:underline" href="https://www.pearl-robotics.com/" target="_blank"
-					rel="noreferrer noopener">PeARL Lab</a> and <a class="text-accent-1 hover:underline"
-					href="https://www.ai-caring.org/" target="_blank" rel="noreferrer noopener">AI-CARING</a>. My
-				interests include data science,
-				reinforcement learning, robotics, and web
-				development.
-			</p>
-		</section>
-
-		<section id="research" class="flex flex-col justify-between gap-8 rounded-lg">
-			<h2 class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4">Research
-				experience</h2>
-			<div>
-				<h3 class="text-2xl font-semibold">Research Assistant</h3>
-				<h4 class="font-semibold mt-3">
-					<a href="https://www.ai-caring.org/" target="_blank" rel="noreferrer noopener"
-						class="hover:underline text-accent-1">AI-CARING</a>
-				</h4>
-			</div>
-			<p>My current work in AI-CARING aims to investigate the adjustment of trust among older adults towards
-				robots that exhibit affiliation changes in a human-robot collaboration context. This involves designing
-				a game similar to a real-world scenario of an older-adult interacting with a robot assistant and
-				observing the person's adjustment when the robot decides to change its affiliation (say from the
-				person it is assisting to a caregiver of that person).</p>
-			<ul
-				class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-				<li>Human-Robot Interaction</li>
-				<li>Human-Computer Interaction</li>
-				<li>Python</li>
-				<li>PyQt</li>
-			</ul>
-			</div>
-
-			<div class="research-item flex flex-col justify-between gap-8 rounded-lg">
-				<div>
-					<h3 class="text-2xl font-semibold">Research Assistant</h3>
-					<h4 class="font-semibold mt-3">
-						<a href="https://www.pearl-robotics.com/" target="_blank" rel="noreferrer noopener"
-							class="hover:underline text-accent-1">
-							PeARL Lab</a>
-						(under
-						<a href="https://arlstrong-uml.netlify.app/" target="_blank" rel="noreferrer noopener"
-							class="hover:underline text-accent-1">
-							AI-CARING</a>
-						and the
-						<a href="https://arlstrong-uml.netlify.app/" target="_blank" rel="noreferrer noopener"
-							class="hover:underline text-accent-1">
-							ARL STRONG</a>
-						project)
-					</h4>
-				</div>
-				<p>I worked under the supervision of <a class="hover:underline
-				text-accent-1" href="https://www.uml.edu/sciences/computer-science/faculty/ahmadzadeh-reza.aspx" target="_blank"
-						rel="noreferrer noopener">Professor Reza
-						Ahmadzadeh</a> to investigate the multi-agent multi-armed bandit
-					problem in reinforcement learning. The main goal was to expedite
-					the emergence of consensus among the agents in a network faced
-					with a decision making problem. I worked on the implementation
-					of multi-agent multi-armed bandit algorithms and simulations to
-					test the performance of various optimization methods. The
-					culmination of this work is my master's thesis, which focuses on
-					introducing various constraints to the multi-agent multi-armed
-					bandit problem such as agent competency, bandit difficulty, and
-					sequences of bandits, and optimizing team performance in the
-					presence of these factors.</p>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>Python</li>
-					<li>NumPy</li>
-					<li>NetworkX</li>
-					<li>Matplotlib</li>
-					<li>Numba</li>
-				</ul>
-			</div>
-
-			<div class="research-item flex flex-col justify-between gap-8 rounded-lg">
-				<div>
-					<h3 class="text-2xl font-semibold">Research Assistant</h3>
-					<h4 class="font-semibold mt-3">
-						<a href="https://www.pearl-robotics.com/" target="_blank" rel="noreferrer noopener"
-							class="hover:underline text-accent-1">
-							PeARL Lab</a>
-						(under the
-						<a href="https://arlstrong-uml.netlify.app/" target="_blank" rel="noreferrer noopener"
-							class="hover:underline text-accent-1">
-							ARL STRONG</a>
-						project)
-					</h4>
-				</div>
+		<main
+			class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] py-16 mx-auto flex flex-col gap-36"
+		>
+			<section id="intro-header" class="flex flex-col justify-center h-[72vh]">
+				<p class="font-mono text-accent-1 mb-10">Hi, I am</p>
+				<p class="font-bold text-7xl mb-4">Monish Reddy Kotturu</p>
 				<p>
-					My research in the ARL STRONG project focused on developing
-					a web interface to conduct virtual human-robot trust
-					experiments. I created a web application that simulates a 2D
-					human-robot collaboration game that examines the development
-					of trust in human-robot networks by collecting various
-					responses during the participants' playtime. So far, I
-					deployed over 30 variations of this game on Amazon MTurk and
-					Prolific which allowed hundreds of participants to
-					contribute to the study's dataset. Several papers have been
-					published based on the results and some are currently under
-					review.
+					A computer science student passionate about data science, robotics, and web
+					development
 				</p>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>HTML/CSS/JS</li>
-					<li>jQuery</li>
-					<li>Python</li>
-					<li>Express</li>
-					<li>MongoDB</li>
-					<li>Heroku</li>
-				</ul>
-			</div>
-		</section>
+			</section>
 
-		<section id="work" class="flex flex-col justify-between gap-8 rounded-lg">
-			<h2 class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4">Work experience
-			</h2>
-
-			<div class="work-item flex flex-col justify-between gap-8 rounded-lg">
-				<div>
-					<h3 class="text-2xl font-semibold">Frontend Web Development Intern</h3>
-					<h4 class="font-semibold mt-3">
-						<a href="https://kaizntree.com/" target="_blank" rel="noreferrer noopener"
-							class="hover:underline text-accent-1">Kaizntree</a>
-					</h4>
-				</div>
-				<p>I worked at <a class="hover:underline text-accent-1" href="https://kaizntree.com" target="_blank"
-						rel="noreferrer
-				noopener">Kaizntree</a> as a remote web development intern
-					during summer 2021. My work involved creating components using
-					Vue.js that interact with a REST API in Django to retrieve and
-					display information and provide inputs to the user to modify
-					data in a web application. I also debugged existing components
-					and designed a user experience to minimize the user effort and
-					time.</p>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>Vue.js</li>
-					<li>Vuetify</li>
-					<li>Django</li>
-					<li>Git</li>
-				</ul>
-			</div>
-		</section>
-
-		<section id="publications" class="flex flex-col justify-between gap-8 rounded-lg">
-			<h2 class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4">Publications
-			</h2>
-
-			<h3 class="text-2xl font-semibold">Accepted</h3>
-			<div class="publication-item flex flex-col justify-between gap-8 rounded-lg">
-				<div class="flex flex-col justify-between gap-2">
-					<a class="inline-block text-xl text-accent-1 font-semibold hover:underline"
-						href="https://dl.acm.org/doi/pdf/10.1145/3651992" target="_blank" rel="noreferrer noopener">Do
-						Humans Trust Robots that Violate moral trust?</a>
-					<p>Zahra Rezaei Khavas, Monish Reddy Kotturu, Paul Robinette, S. Reza Ahmadzadeh</p>
-					<p class="text-light-secondary">ACM Transactions on Human-Robot Interaction (HRI) 2024</p>
-				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>Human-Centered Computing</li>
-					<li>Human-Robot Interaction</li>
-					<li>Human-Robot Trust</li>
-				</ul>
-			</div>
-			<div class="publication-item flex flex-col justify-between gap-8 rounded-lg">
-				<div class="flex flex-col justify-between gap-2">
-					<a class="inline-block mb-2 text-xl text-accent-1 font-semibold hover:underline"
-						href="https://doi.org/10.17706/jsw.18.3.117-129" target="_blank" rel="noreferrer noopener">The
-						Effect of Performance-Based Compensation on Crowdsourced Human-Robot Interaction Experiments</a>
-					<p>Zahra Rezaei Khavas, Monish Reddy Kotturu, Russell Perkins, S. Reza Ahmadzadeh, Paul Robinette
-					</p>
-					<p class="text-light-secondary">Journal of Software (JSW) 2023</p>
-				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>Human-Robot Interaction</li>
-					<li>Human-Robot Trust</li>
-				</ul>
-			</div>
-			<div class="publication-item flex flex-col justify-between gap-8 rounded-lg">
-				<div class="flex flex-col justify-between gap-2">
-					<a class="inline-block mb-2 text-xl text-accent-1 font-semibold hover:underline"
-						href="https://doi.org/10.1007/978-3-031-24670-8_56" target="_blank"
-						rel="noreferrer noopener">The
-						Reason for an Apology Matters for Robot Trust Repair</a>
-					<p>Russell Perkins, Zahra Rezaei Khavas, Kalvin McCallum, Monish Reddy Kotturu, Paul
-						Robinette</p>
-					<p class="text-light-secondary">International Conference on Social Robotics (ICSR) 2022</p>
-				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>Human-Robot Interaction</li>
-					<li>Human-Robot Collaboration</li>
-					<li>Trust Calibration</li>
-					<li>Trust Repair</li>
-				</ul>
-			</div>
-
-			<h3 class="text-2xl font-semibold mt-8">Under review</h3>
-			<div class="publication-item flex flex-col justify-between gap-8 rounded-lg">
-				<div class="flex flex-col justify-between gap-2">
-					<p class="inline-block mb-2 text-xl font-semibold">Do
-						Humans Have Different Expectations Regarding Humans and Robots' Morality?</a>
-					<p>Zahra Rezaei Khavas, Monish Reddy Kotturu, Paul Robinette</p>
-					<p class="text-light-secondary">IEEE International Conference on Robot and Human Interactive
-						Communication (IEEE RO-MAN) 2024</p>
-				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>Human-Robot Interaction</li>
-					<li>Human-Robot Collaboration</li>
-					<li>Human-Robot Trust</li>
-				</ul>
-			</div>
-		</section>
-
-		<section id="posters" class="flex flex-col justify-between gap-8 rounded-lg">
-			<h2 class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4">Posters
-			</h2>
-
-			<div class="poster-item flex flex-col justify-between gap-8 rounded-lg">
-				<div class="flex flex-col justify-between gap-2">
-					<p class="inline-block text-xl font-semibold">
-						RT3: Towards Improving Team Performance in Multi-Agent Multi-Armed Bandits</p>
-					<p>Monish Reddy Kotturu, S. Reza Ahmadzadeh</p>
-					<p class="text-light-secondary">AI-CARING 2nd Annual Meeting and Site Visit 2023</p>
-				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>Multi-Armed Bandits</li>
-					<li>Distributed Decision Making</li>
-					<li>Consensus Optimization</li>
-				</ul>
-			</div>
-			<div class="poster-item flex flex-col justify-between gap-8 rounded-lg">
-				<div class="flex flex-col justify-between gap-2">
-					<p class="inline-block text-xl font-semibold">
-						Towards Improving Team Performance in Multi-Agent Multi-Armed
-						Bandits</p>
-					<p>Monish Reddy Kotturu, S. Reza Ahmadzadeh</p>
-					<p class="text-light-secondary">Northeast Robotics Colloqium (NERC) 2022</p>
-				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>Multi-Armed Bandits</li>
-					<li>Distributed Decision Making</li>
-					<li>Consensus Optimization</li>
-				</ul>
-			</div>
-		</section>
-
-		<section id="projects" class="flex flex-col justify-between gap-8 rounded-lg">
-			<h2 class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4">Projects</h2>
-
-			<div class="project-item flex flex-col justify-between gap-8 rounded-lg">
-				<h3 class="text-2xl font-semibold">Medication Delivery Robot</h3>
-				<p>As part of the final group project in my assistive robots class, my team and I designed and
-					implemented a
-					medication delivery robot that uses face detection and autonomous navigation to deliver medication
-					to older adults in an assisted living facility, demonstrating a high level of autonomy. Our code was
-					implemented and tested on the <a class="hover:underline text-accent-1"
-						href="https://hello-robot.com/product" target="_blank" rel="noreferrer noopener">Stretch RE1
-						robot developed by Hello Robot</a>.</p>
-				<div class="w-full flex flex-col lg:flex-row gap-8  justify-center items-center">
-					<iframe class="rounded-lg lg:h-72 w-full lg:w-auto aspect-video"
-						src="https://www.youtube-nocookie.com/embed/g9yApvJzg3o?si=flbZGmIebCV0hCGd"
-						title="YouTube video player" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen></iframe>
-				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>Python</li>
-					<li>ROS</li>
-					<li>OpenCV</li>
-				</ul>
-			</div>
-
-			<div class="project-item flex flex-col justify-between gap-8 rounded-lg">
-				<h3 class="text-2xl font-semibold">Northeast Robotics Colloqium (NERC) 2022 Website</h3>
-				<p>I created the website for the <a class="hover:underline text-accent-1"
-						href="https://nerc2022.netlify.app" target="_blank" rel="noreferrer noopener">Northeast
-						Robotics
-						Colloquium (NERC) 2022</a>, which was hosted by the University of Massachusetts on October 8,
-					2022.
-					This event is a research meeting, job-fair, and a show case for established and up-coming robot
-					companies that brought together roboticists in the northeastern United States and Canada. I
-					maintained up-to-date information about the event details such as schedule, location, registration,
-					and more.</p>
-				<div class="w-full flex flex-col lg:flex-row gap-8  justify-center items-center">
-					<img class="bg-cover bg-center rounded-lg w-full lg:w-auto lg:h-72" src="/img/nerc_desktop.png"
-						alt="NERC Desktop Screenshot">
-					<img class="bg-cover bg-center rounded-lg w-1/2 lg:w-auto lg:h-72" src="/img/nerc_mobile.png"
-						alt="NERC Mobile Screenshot">
-				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>HTML/JS</li>
-					<li>Tailwindcss</li>
-					<li>Vite</li>
-				</ul>
-			</div>
-
-			<div class="project-item flex flex-col justify-between gap-8 rounded-lg">
-				<h3 class="text-2xl font-semibold">Strengthening Teamwork for Robust Operations in Novel Groups (STRONG)
-					Website</h3>
-				<p>I created the website for <a class="hover:underline text-accent-1"
-						href="https://arlstrong-uml.netlify.app" target="_blank"
-						rel="noreferrer noopener">Trust-NEARCHAT</a>, the group of researchers that I am a part of at
-					the
-					University of Massachusetts Lowell in the ARL STRONG team. This website is a display of the focus of
-					the
-					project and the work done and published by our group.</p>
-				<div class="w-full flex flex-col lg:flex-row gap-8  justify-center items-center">
-					<img class="bg-cover bg-center rounded-lg w-full lg:w-auto lg:h-72" src="/img/arlstrong_desktop.png"
-						alt="ARL STRONG Desktop Screenshot">
-					<img class="bg-cover bg-center rounded-lg w-1/2 lg:w-auto lg:h-72" src="/img/arlstrong_mobile.png"
-						alt="ARL STRONG Mobile Screenshot">
-				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>React</li>
-					<li>Tailwindcss</li>
-					<li>Netlify</li>
-				</ul>
-			</div>
-
-			<div class="project-item flex flex-col justify-between gap-8 rounded-lg">
-				<h3 class="text-2xl font-semibold">Others</h3>
-				<p>My other works, some completed for classes and some for fun, include search algorithms such as RRT
+			<section id="about-me" class="flex flex-col justify-between gap-8 rounded-lg">
+				<h2
+					class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4"
+				>
+					About me
+				</h2>
+				<p>
+					I am an M.S. student in computer science at the University of Massachusetts
+					Lowell. I am also a research assistant in the
+					<a
+						class="text-accent-1 hover:underline"
+						href="https://www.pearl-robotics.com/"
+						target="_blank"
+						rel="noreferrer noopener"
+						>PeARL Lab</a
+					>
 					and
-					A*, the famous evil hangman game, reinforcement learning algorithms including tabular methods and
-					approximation methods, and more. Check out my <a class="hover:underline text-accent-1"
-						href="https://github.com/mokotturu" target="_blank" rel="noreferrer noopener">GitHub profile</a>
-					for
-					more details and repositories.</p>
-				<div class="w-full flex flex-col lg:flex-row gap-8  justify-center items-center">
-					<img class="bg-cover bg-center rounded-lg w-full lg:w-auto lg:h-72" src="/img/rrt.png"
-						alt="Rapidly-exploring Random Tree">
-					<img class="bg-cover bg-center rounded-lg w-full lg:w-auto lg:h-72" src="/img/masar.png"
-						alt="Multi-Agent Search and Rescue using Q-Learning">
+					<a
+						class="text-accent-1 hover:underline"
+						href="https://www.ai-caring.org/"
+						target="_blank"
+						rel="noreferrer noopener"
+						>AI-CARING</a
+					>. My interests include data science, reinforcement learning, robotics, and web
+					development.
+				</p>
+			</section>
+
+			<section id="research" class="flex flex-col justify-between gap-8 rounded-lg">
+				<h2
+					class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4"
+				>
+					Research experience
+				</h2>
+				<div class="research-item flex flex-col justify-between gap-8 rounded-lg">
+					<div>
+						<h3 class="text-2xl font-semibold">Research Assistant</h3>
+						<h4 class="font-semibold mt-3">
+							<a
+								href="https://www.ai-caring.org/"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="hover:underline text-accent-1"
+								>AI-CARING</a
+							>
+						</h4>
+					</div>
+					<p>
+						My current work in AI-CARING aims to investigate the adjustment of trust
+						among older adults towards robots that exhibit affiliation changes in a
+						human-robot collaboration context. This involves designing a game similar to
+						a real-world scenario of an older-adult interacting with a robot assistant
+						and observing the person's adjustment when the robot decides to change its
+						affiliation (say from the person it is assisting to a caregiver of that
+						person).
+					</p>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Human-Robot Interaction</li>
+						<li>Human-Computer Interaction</li>
+						<li>Python</li>
+						<li>PyQt</li>
+					</ul>
 				</div>
-				<ul
-					class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs">
-					<li>HTML/CSS/JS</li>
-					<li>C/C++</li>
-					<li>Python</li>
-				</ul>
-			</div>
-		</section>
-	</main>
 
-	<footer class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] mx-auto py-16 border-t-2 border-dark-secondary">
-		<div class="flex justify-between items-center">
-			<a class="font-mono hover:underline text-accent-1" href="mailto:monishkotturu@gmail.com">
-				monishkotturu@gmail.com
-			</a>
+				<div class="research-item flex flex-col justify-between gap-8 rounded-lg">
+					<div>
+						<h3 class="text-2xl font-semibold">Research Assistant</h3>
+						<h4 class="font-semibold mt-3">
+							<a
+								href="https://www.pearl-robotics.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="hover:underline text-accent-1"
+							>
+								PeARL Lab</a
+							>
+							(under
+							<a
+								href="https://arlstrong-uml.netlify.app/"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="hover:underline text-accent-1"
+							>
+								AI-CARING</a
+							>
+							and the
+							<a
+								href="https://arlstrong-uml.netlify.app/"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="hover:underline text-accent-1"
+							>
+								ARL STRONG</a
+							>
+							project)
+						</h4>
+					</div>
+					<p>
+						I worked under the supervision of
+						<a
+							class="hover:underline text-accent-1"
+							href="https://www.uml.edu/sciences/computer-science/faculty/ahmadzadeh-reza.aspx"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Professor Reza Ahmadzadeh</a
+						>
+						to investigate the multi-agent multi-armed bandit problem in reinforcement
+						learning. The main goal was to expedite the emergence of consensus among the
+						agents in a network faced with a decision making problem. I worked on the
+						implementation of multi-agent multi-armed bandit algorithms and simulations
+						to test the performance of various optimization methods. The culmination of
+						this work is my master's thesis, which focuses on introducing various
+						constraints to the multi-agent multi-armed bandit problem such as agent
+						competency, bandit difficulty, and sequences of bandits, and optimizing team
+						performance in the presence of these factors.
+					</p>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Python</li>
+						<li>NumPy</li>
+						<li>NetworkX</li>
+						<li>Matplotlib</li>
+						<li>Numba</li>
+					</ul>
+				</div>
 
-			<div class="flex gap-4 justify-center items-center">
-				<a href="https://github.com/mokotturu" target="_blank" rel="noreferrer noopener">
-					<svg class="stroke-accent-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						stroke-linejoin="round" class="feather feather-github" role="img" aria-label="GitHub">
-						<path
-							d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-						</path>
-					</svg>
+				<div class="research-item flex flex-col justify-between gap-8 rounded-lg">
+					<div>
+						<h3 class="text-2xl font-semibold">Research Assistant</h3>
+						<h4 class="font-semibold mt-3">
+							<a
+								href="https://www.pearl-robotics.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="hover:underline text-accent-1"
+							>
+								PeARL Lab</a
+							>
+							(under the
+							<a
+								href="https://arlstrong-uml.netlify.app/"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="hover:underline text-accent-1"
+							>
+								ARL STRONG</a
+							>
+							project)
+						</h4>
+					</div>
+					<p>
+						My research in the ARL STRONG project focused on developing a web interface
+						to conduct virtual human-robot trust experiments. I created a web
+						application that simulates a 2D human-robot collaboration game that examines
+						the development of trust in human-robot networks by collecting various
+						responses during the participants' playtime. So far, I deployed over 30
+						variations of this game on Amazon MTurk and Prolific which allowed hundreds
+						of participants to contribute to the study's dataset. Several papers have
+						been published based on the results and some are currently under review.
+					</p>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>HTML/CSS/JS</li>
+						<li>jQuery</li>
+						<li>Python</li>
+						<li>Express</li>
+						<li>MongoDB</li>
+						<li>Heroku</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="work" class="flex flex-col justify-between gap-8 rounded-lg">
+				<h2
+					class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4"
+				>
+					Work experience
+				</h2>
+
+				<div class="work-item flex flex-col justify-between gap-8 rounded-lg">
+					<div>
+						<h3 class="text-2xl font-semibold">Frontend Web Development Intern</h3>
+						<h4 class="font-semibold mt-3">
+							<a
+								href="https://kaizntree.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="hover:underline text-accent-1"
+								>Kaizntree</a
+							>
+						</h4>
+					</div>
+					<p>
+						I worked at
+						<a
+							class="hover:underline text-accent-1"
+							href="https://kaizntree.com"
+							target="_blank"
+							rel="noreferrer
+				noopener"
+							>Kaizntree</a
+						>
+						as a remote web development intern during summer 2021. My work involved
+						creating components using Vue.js that interact with a REST API in Django to
+						retrieve and display information and provide inputs to the user to modify
+						data in a web application. I also debugged existing components and designed
+						a user experience to minimize the user effort and time.
+					</p>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Vue.js</li>
+						<li>Vuetify</li>
+						<li>Django</li>
+						<li>Git</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="publications" class="flex flex-col justify-between gap-8 rounded-lg">
+				<h2
+					class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4"
+				>
+					Publications
+				</h2>
+
+				<h3 class="text-2xl font-semibold">Accepted</h3>
+				<div class="publication-item flex flex-col justify-between gap-8 rounded-lg">
+					<div class="flex flex-col justify-between gap-2">
+						<a
+							class="inline-block text-xl text-accent-1 font-semibold hover:underline"
+							href="https://dl.acm.org/doi/pdf/10.1145/3651992"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Do Humans Trust Robots that Violate moral trust?</a
+						>
+						<p>
+							Zahra Rezaei Khavas, Monish Reddy Kotturu, Paul Robinette, S. Reza
+							Ahmadzadeh
+						</p>
+						<p class="text-light-secondary">
+							ACM Transactions on Human-Robot Interaction (HRI) 2024
+						</p>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Human-Centered Computing</li>
+						<li>Human-Robot Interaction</li>
+						<li>Human-Robot Trust</li>
+					</ul>
+				</div>
+				<div class="publication-item flex flex-col justify-between gap-8 rounded-lg">
+					<div class="flex flex-col justify-between gap-2">
+						<a
+							class="inline-block mb-2 text-xl text-accent-1 font-semibold hover:underline"
+							href="https://doi.org/10.17706/jsw.18.3.117-129"
+							target="_blank"
+							rel="noreferrer noopener"
+							>The Effect of Performance-Based Compensation on Crowdsourced
+							Human-Robot Interaction Experiments</a
+						>
+						<p>
+							Zahra Rezaei Khavas, Monish Reddy Kotturu, Russell Perkins, S. Reza
+							Ahmadzadeh, Paul Robinette
+						</p>
+						<p class="text-light-secondary">Journal of Software (JSW) 2023</p>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Human-Robot Interaction</li>
+						<li>Human-Robot Trust</li>
+					</ul>
+				</div>
+				<div class="publication-item flex flex-col justify-between gap-8 rounded-lg">
+					<div class="flex flex-col justify-between gap-2">
+						<a
+							class="inline-block mb-2 text-xl text-accent-1 font-semibold hover:underline"
+							href="https://doi.org/10.1007/978-3-031-24670-8_56"
+							target="_blank"
+							rel="noreferrer noopener"
+							>The Reason for an Apology Matters for Robot Trust Repair</a
+						>
+						<p>
+							Russell Perkins, Zahra Rezaei Khavas, Kalvin McCallum, Monish Reddy
+							Kotturu, Paul Robinette
+						</p>
+						<p class="text-light-secondary">
+							International Conference on Social Robotics (ICSR) 2022
+						</p>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Human-Robot Interaction</li>
+						<li>Human-Robot Collaboration</li>
+						<li>Trust Calibration</li>
+						<li>Trust Repair</li>
+					</ul>
+				</div>
+
+				<h3 class="text-2xl font-semibold mt-8">Under review</h3>
+				<div class="publication-item flex flex-col justify-between gap-8 rounded-lg">
+					<div class="flex flex-col justify-between gap-2">
+						<p class="inline-block mb-2 text-xl font-semibold">
+							Do Humans Have Different Expectations Regarding Humans and Robots'
+							Morality?
+						</p>
+						<p>Zahra Rezaei Khavas, Monish Reddy Kotturu, Paul Robinette</p>
+						<p class="text-light-secondary">
+							IEEE International Conference on Robot and Human Interactive
+							Communication (IEEE RO-MAN) 2024
+						</p>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Human-Robot Interaction</li>
+						<li>Human-Robot Collaboration</li>
+						<li>Human-Robot Trust</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="posters" class="flex flex-col justify-between gap-8 rounded-lg">
+				<h2
+					class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4"
+				>
+					Posters
+				</h2>
+
+				<div class="poster-item flex flex-col justify-between gap-8 rounded-lg">
+					<div class="flex flex-col justify-between gap-2">
+						<p class="inline-block text-xl font-semibold">
+							RT3: Towards Improving Team Performance in Multi-Agent Multi-Armed
+							Bandits
+						</p>
+						<p>Monish Reddy Kotturu, S. Reza Ahmadzadeh</p>
+						<p class="text-light-secondary">
+							AI-CARING 2nd Annual Meeting and Site Visit 2023
+						</p>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Multi-Armed Bandits</li>
+						<li>Distributed Decision Making</li>
+						<li>Consensus Optimization</li>
+					</ul>
+				</div>
+				<div class="poster-item flex flex-col justify-between gap-8 rounded-lg">
+					<div class="flex flex-col justify-between gap-2">
+						<p class="inline-block text-xl font-semibold">
+							Towards Improving Team Performance in Multi-Agent Multi-Armed Bandits
+						</p>
+						<p>Monish Reddy Kotturu, S. Reza Ahmadzadeh</p>
+						<p class="text-light-secondary">Northeast Robotics Colloqium (NERC) 2022</p>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Multi-Armed Bandits</li>
+						<li>Distributed Decision Making</li>
+						<li>Consensus Optimization</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="projects" class="flex flex-col justify-between gap-8 rounded-lg">
+				<h2
+					class="text-main-heading font-bold text-4xl font-mono before:content-['~'] before:mr-4"
+				>
+					Projects
+				</h2>
+
+				<div class="project-item flex flex-col justify-between gap-8 rounded-lg">
+					<h3 class="text-2xl font-semibold">Medication Delivery Robot</h3>
+					<p>
+						As part of the final group project in my assistive robots class, my team and
+						I designed and implemented a medication delivery robot that uses face
+						detection and autonomous navigation to deliver medication to older adults in
+						an assisted living facility, demonstrating a high level of autonomy. Our
+						code was implemented and tested on the
+						<a
+							class="hover:underline text-accent-1"
+							href="https://hello-robot.com/product"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Stretch RE1 robot developed by Hello Robot</a
+						>.
+					</p>
+					<div class="w-full flex flex-col lg:flex-row gap-8 justify-center items-center">
+						<iframe
+							class="rounded-lg lg:h-72 w-full lg:w-auto aspect-video"
+							src="https://www.youtube-nocookie.com/embed/g9yApvJzg3o?si=flbZGmIebCV0hCGd"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>Python</li>
+						<li>ROS</li>
+						<li>OpenCV</li>
+					</ul>
+				</div>
+
+				<div class="project-item flex flex-col justify-between gap-8 rounded-lg">
+					<h3 class="text-2xl font-semibold">
+						Northeast Robotics Colloqium (NERC) 2022 Website
+					</h3>
+					<p>
+						I created the website for the
+						<a
+							class="hover:underline text-accent-1"
+							href="https://nerc2022.netlify.app"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Northeast Robotics Colloquium (NERC) 2022</a
+						>, which was hosted by the University of Massachusetts on October 8, 2022.
+						This event is a research meeting, job-fair, and a show case for established
+						and up-coming robot companies that brought together roboticists in the
+						northeastern United States and Canada. I maintained up-to-date information
+						about the event details such as schedule, location, registration, and more.
+					</p>
+					<div class="w-full flex flex-col lg:flex-row gap-8 justify-center items-center">
+						<img
+							class="bg-cover bg-center rounded-lg w-full lg:w-auto lg:h-72"
+							src="/img/nerc_desktop.png"
+							alt="NERC Desktop Screenshot"
+						/>
+						<img
+							class="bg-cover bg-center rounded-lg w-1/2 lg:w-auto lg:h-72"
+							src="/img/nerc_mobile.png"
+							alt="NERC Mobile Screenshot"
+						/>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>HTML/JS</li>
+						<li>Tailwindcss</li>
+						<li>Vite</li>
+					</ul>
+				</div>
+
+				<div class="project-item flex flex-col justify-between gap-8 rounded-lg">
+					<h3 class="text-2xl font-semibold">
+						Strengthening Teamwork for Robust Operations in Novel Groups (STRONG)
+						Website
+					</h3>
+					<p>
+						I created the website for
+						<a
+							class="hover:underline text-accent-1"
+							href="https://arlstrong-uml.netlify.app"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Trust-NEARCHAT</a
+						>, the group of researchers that I am a part of at the University of
+						Massachusetts Lowell in the ARL STRONG team. This website is a display of
+						the focus of the project and the work done and published by our group.
+					</p>
+					<div class="w-full flex flex-col lg:flex-row gap-8 justify-center items-center">
+						<img
+							class="bg-cover bg-center rounded-lg w-full lg:w-auto lg:h-72"
+							src="/img/arlstrong_desktop.png"
+							alt="ARL STRONG Desktop Screenshot"
+						/>
+						<img
+							class="bg-cover bg-center rounded-lg w-1/2 lg:w-auto lg:h-72"
+							src="/img/arlstrong_mobile.png"
+							alt="ARL STRONG Mobile Screenshot"
+						/>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>React</li>
+						<li>Tailwindcss</li>
+						<li>Netlify</li>
+					</ul>
+				</div>
+
+				<div class="project-item flex flex-col justify-between gap-8 rounded-lg">
+					<h3 class="text-2xl font-semibold">Others</h3>
+					<p>
+						My other works, some completed for classes and some for fun, include search
+						algorithms such as RRT and A*, the famous evil hangman game, reinforcement
+						learning algorithms including tabular methods and approximation methods, and
+						more. Check out my
+						<a
+							class="hover:underline text-accent-1"
+							href="https://github.com/mokotturu"
+							target="_blank"
+							rel="noreferrer noopener"
+							>GitHub profile</a
+						>
+						for more details and repositories.
+					</p>
+					<div class="w-full flex flex-col lg:flex-row gap-8 justify-center items-center">
+						<img
+							class="bg-cover bg-center rounded-lg w-full lg:w-auto lg:h-72"
+							src="/img/rrt.png"
+							alt="Rapidly-exploring Random Tree"
+						/>
+						<img
+							class="bg-cover bg-center rounded-lg w-full lg:w-auto lg:h-72"
+							src="/img/masar.png"
+							alt="Multi-Agent Search and Rescue using Q-Learning"
+						/>
+					</div>
+					<ul
+						class="flex justify-end gap-4 before:content-[''] before:border-t-[1px] before:border-t-accent-1 before:flex-1 before:relative before:top-1/2 before:left-0 before:translate-y-1/2 before:transform-gpu child:whitespace-nowrap child:before:content-['{'] child:after:content-['}'] child:before:pr-2 child:after:pl-2 child:before:text-accent-1 child:after:text-accent-1 flex-wrap font-mono text-xs"
+					>
+						<li>HTML/CSS/JS</li>
+						<li>C/C++</li>
+						<li>Python</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<footer
+			class="w-[85%] lg:w-[60em] xl:w-[75em] 2xl:w-[85em] mx-auto py-16 border-t-2 border-dark-secondary"
+		>
+			<div class="flex justify-between items-center">
+				<a
+					class="font-mono hover:underline text-accent-1"
+					href="mailto:monishkotturu@gmail.com"
+				>
+					monishkotturu@gmail.com
 				</a>
-				<a href="https://linkedin.com/in/monish-reddy-kotturu" target="_blank" rel="noreferrer noopener">
-					<svg class="stroke-accent-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-						viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						stroke-linejoin="round" class="feather feather-linkedin" role="img" aria-label="LinkedIn">
-						<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-						</path>
-						<rect x="2" y="9" width="4" height="12"></rect>
-						<circle cx="4" cy="4" r="2"></circle>
-					</svg>
-				</a>
+
+				<div class="flex gap-4 justify-center items-center">
+					<a
+						href="https://github.com/mokotturu"
+						target="_blank"
+						rel="noreferrer noopener"
+					>
+						<svg
+							class="stroke-accent-1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="feather feather-github"
+							role="img"
+							aria-label="GitHub"
+						>
+							<path
+								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+							></path>
+						</svg>
+					</a>
+					<a
+						href="https://linkedin.com/in/monish-reddy-kotturu"
+						target="_blank"
+						rel="noreferrer noopener"
+					>
+						<svg
+							class="stroke-accent-1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="feather feather-linkedin"
+							role="img"
+							aria-label="LinkedIn"
+						>
+							<path
+								d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+							></path>
+							<rect x="2" y="9" width="4" height="12"></rect>
+							<circle cx="4" cy="4" r="2"></circle>
+						</svg>
+					</a>
+				</div>
 			</div>
-		</div>
 
-		<p class="text-center mt-8">
-			&copy;
-			<script>
-				document.write(new Date().getFullYear());
-			</script>
-			Monish Reddy Kotturu
-		</p>
+			<p class="text-center mt-8">
+				&copy;
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+				Monish Reddy Kotturu
+			</p>
 
-		<p class="text-center mt-8 text-subtle">
-			Made using the <a class="text-accent-1 hover:underline" href="https://catppuccin.com/" target="_blank"
-				rel="noreferrer noopener">Catppuccin Theme</a>
-		</p>
-	</footer>
+			<p class="text-center mt-8 text-subtle">
+				Made using the
+				<a
+					class="text-accent-1 hover:underline"
+					href="https://catppuccin.com/"
+					target="_blank"
+					rel="noreferrer noopener"
+					>Catppuccin Theme</a
+				>
+			</p>
+		</footer>
 
-	<script type="module" src="./index.js"></script>
-</body>
-
+		<script type="module" src="./index.js"></script>
+	</body>
 </html>
